@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Marquee from 'react-fast-marquee';
 import { Badges } from './Badges';
+import { Link } from 'react-router-dom';
 
 // Removed duplicate import to avoid redeclaration of SupportersComponent
 
@@ -464,10 +465,8 @@ const TechFeatures = () => {
         </StyledDot>
 
         <StyledDot>
-          <a
-            href="https://resume-builder-pro.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/ResumeBuilder"
             className="project-card to-[rgba(0, 43, 62, 0.6)] group relative block h-full rounded-lg border border-white bg-gradient-to-r from-[rgba(15,27,53,0.9)] p-6 shadow-lg transition duration-300 hover:scale-105 hover:transform"
           >
             <span className="absolute inset-0"></span>
@@ -476,18 +475,13 @@ const TechFeatures = () => {
                 <h3 className="mb-4 text-2xl font-semibold text-[#00a6fb]">Resume Builder</h3>
                 <p>Transform your GitHub journey into a professional resume in seconds</p>
               </div>
-              <StyledButton
-                onClick={() => {
-                  window.location.href = 'https://resume-builder-pro.vercel.app/';
-                  window.open('_blank');
-                }}
-              >
+              <StyledButton>
                 <div className="blob1" />
                 <div className="inner">Explore Now</div>
               </StyledButton>
             </div>
             <div className="dot" />
-          </a>
+          </Link>
         </StyledDot>
 
         {/* <StyledDot>
