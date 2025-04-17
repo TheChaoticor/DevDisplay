@@ -15,7 +15,7 @@ import IdeaSubmission from './Page/IdeaSubmission.jsx';
 import PortfolioIdeas from './Page/PortfolioIdeas/PortfolioIdeas.jsx';
 import PortfolioBuilder from './Page/PortfolioBuilder.jsx';
 import ProjectShowcase from './Page/ProjectShowcase.jsx';
-import ResumeBuilder from './Page/ResumeBuilder.jsx';
+
 import Discussions from './Page/Discussions.jsx';
 import IndustryTrends from './Page/IndustryTrends.jsx';
 import JourneyPage from './Page/JourneyPage.jsx';
@@ -47,7 +47,7 @@ import ResearchPaper from './Page/ResoucesHub/ResearchPaper.jsx';
 import APIs from './Page/ResoucesHub/APIs.jsx';
 import BestColleges from './Page/ResoucesHub/BestColleges.jsx';
 import DevShare from './Page/ResoucesHub/DevShare.jsx';
-
+import ResumeBuilder from './Page/Resume-Builder/src/Pages/Home/Home.jsx';
 import PageNotFound from './Page/PageNotFound.jsx';
 import ProfilePage from './components/Profile/ProfilePage';
 
@@ -141,7 +141,7 @@ function App() {
         <Route path="/APIs" element={<APIs />} />
         <Route path="/BestColleges" element={<BestColleges />} />
         <Route path="/DevShare" element={<DevShare />} />
-
+        <Route path="/ResumeBuilder" element={<ResumeBuilder />} />
         <Route path="/profile/:name" element={<ProfilePage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
